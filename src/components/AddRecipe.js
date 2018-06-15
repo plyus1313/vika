@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 class AddRecipe extends Component {
   handleClick = () => {
-    console.log("I work");
-
     ReactDOM.render(
       <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
         <main className="pa4 black-80">
@@ -42,8 +40,9 @@ class AddRecipe extends Component {
             </div>
           </div>
         </main>
-      </article>
-    , document.getElementById('new-container'));
+      </article>,
+      document.getElementById("new-container")
+    );
   };
 
   render() {
